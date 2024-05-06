@@ -37,4 +37,6 @@ function show(){
     setTimeout(()=>thanks.innerHTML=`You have typed: ${this.value}`
     ,1000)
 }
+// show=()=>display.innerHTML=thanks.value
+// setTimeout(()=>thanks.innerHTML=this.value)
 Searchinput.addEventListener('keyup',show)
