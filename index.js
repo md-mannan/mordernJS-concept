@@ -15,14 +15,26 @@
 
 // Javascript.printLibraries()
 
-let Javascript={
-    name:"Javascript",
-    libraries:['React','Angular','Vue'],
-    printLibraries:function(){
-        console.log(this)
+// let Javascript={
+//     name:"Javascript",
+//     libraries:['React','Angular','Vue'],
+//     printLibraries:function(){
+//         console.log(this)
         
-        this.libraries.forEach(a=>console.log(`${this.name} love ${a}`))
-    }
-}
+//         this.libraries.forEach(a=>console.log(`${this.name} love ${a}`))
+//     }
+// }
 
-Javascript.printLibraries()
+// Javascript.printLibraries()
+
+var Searchinput=document.querySelector('.input')
+var display=document.querySelector(".result")
+var thanks=document.querySelector(".thanks")
+
+function show(){
+    display.innerHTML=this.value;
+   
+    setTimeout(()=>thanks.innerHTML=`You have typed: ${this.value}`
+    ,1000)
+}
+Searchinput.addEventListener('keyup',show)
